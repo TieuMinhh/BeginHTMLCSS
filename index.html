@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+  <!--Các thẻ thông dụng : 
+        1. h1 -> h6 : Tiêu đề : Chữ nhỏ dần từ h1 -> h6
+        2.p : Paragraph : in đoạn văn
+        3.img : Image : chèn ảnh
+        4.a : Thẻ liên kết
+        5.ul , li : Hiển thị danh sách
+        6.table : Bảng
+        7.input : Nhập
+        8.button : Nút
+        9.div : Tạo khối bao quanh
+    -->
+
+  <!--Thêm :
+        10. Attribute : Thuộc tính của thẻ HTML , nằm trong thẻ mở-->
+
+  <!--3 cách sử dụng CSS in HTML :
+       1.Internal : Sử dụng 2 cặp thẻ sytle đặt trong HTML và viết các thuộc tính CSS
+       2.External : Tạo 1 file đuôi css CÙNG THƯ MỤC VS FILE HTML và link vào HTML
+       3.Inline : Viết vào trong thẻ mở vs Attribute-->      
+
+  <!--Phần đầu-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://accfifa.com/85f77a235425409fd38845d4488515e3.png">
+    <titlle>XiaoMing.vn/Shop Bán Acc Uy Tín Số 1 Việt Nam</titlle>
+
+
+    <!-- <style>
+      h1 {
+        color: red;
+        font-size: 60px;
+      }                                                                                               CÁCH 1
+      p{
+        color:green;
+        font-size: 60px;
+      }
+    </style> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">                                                        <!--CÁCH 2 -->
+
+  </head>
+  <!--Phần thân-->
+  <body>
+    <div>
+      <!--Tạo khối bao quanh phần thân-->
+      <!-- <h1 title="Style">      ===      Thêm 1 thẻ Attribute tên là style vào thẻ h1 ?-->
+        <!-- Hello everyone!
+      </h1>   -->
+      <div class="sl-header">
+        <div class="container">
+          <a class="sl-logo" href="#" title="Trang chủ">
+            <img src="https://accfifa.com/0c116ce13755219d446d1b20e59b4f24.png" alt="">
+          </a>
+          <ul class="sl-menu">
+            <li class="active"><a href="#">TRANG CHỦ</a></li>
+            <li class=""><a href="#">HƯỚNG DẪN</a></li>
+            <li class=""><a href="#">NẠP TIỀN</a></li>
+            <li class=""><a href="#">BẢO MẬT TÀI KHOẢN</a></li>
+          </ul>
+          <ul class="sl-logreg">
+            <li class=""><a href="#" title="Đăng nhập">Đăng nhập</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <br>
+      
+      <h1 id="Heading"  class="Hooding"> Hello everyone! 
+      </h1>
+
+      <!--<h1 style = "color : green"> Hello everyone</h1>  Độ ưu tiên 1000 => Mạnh nhất nên thực hiện trước-->
+        
+      <hr />
+        <!--Xuống hàng-->
+      </h1>
+      <h1 style = "color : blue;font-size: 60;margin-top: 20px;">WELCOME TO MIN CÓ NY SHOPPING</h1>          <!--CÁCH 3-->
+
+      <p class="chuccony">CHÚC CÁC BẠN MAU CHÓNG CÓ NY</p>
+
+      <hr />
+      <div style="color: red;font-size: 40px;">CHÈN ẢNH VÀO CSS </div>
+      <img border ="0"
+        source src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-6/273175312_1721414928250795_1946462547531562390_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=GG-Cron5KBwAX_a-D0W&tn=8m5UVI_QzOyOcwbi&_nc_ht=scontent.fsgn5-9.fna&oh=00_AT-m2vAZnidtvhmtz0rqbf9XE7z53ISCbzkVqi2jcp752w&oe=622468D3"
+        alt="ảnh Min" width="300" height="300" style="display:block"
+      />
+      <!--src : source : nguồn ảnh
+        alt : ghi tên ảnh để phòng khi ảnh bị lỗi v-->
+
+      <hr />
+      <div style="color: red;font-size: 40px;">CHÈN VIDEO VÀO CSS </div>
+      <video width="300" height="300" controls
+       source src="VIdeos/[VIDEO CHILL LYRICS] - EM HÃY CỨ CƯỜI NHIỀU LÊN ĐI - PHÍA SAU CỦA EM LUÔN CÒN CÓ ANH.mp4">
+      </video>
+      
+      <div style="color: red;font-size: 40px;">CHÈN VIDEO YOUTUBE VÀO CSS </div>
+      <iframe width="300" height="300" 
+      source src="https://youtube.com/embed/ue80QwXMRHg? controls=1 & start=50">
+      </iframe>
+
+      <div style="color: red;font-size: 40px;">NHÚNG VIDEO YOUTUBE VÀO CSS </div>
+      <iframe width="560" height="315" 
+      source src="https://www.youtube.com/embed/Ld7w3jE2gjw" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+      </iframe>
+
+
+      <hr>
+      <div style="color: red;font-size: 40px;">CHÈN ĐOẠN NHẠC VÀO CSS </div>
+      <audio controls
+       source src="Audios/EmHayCuCuoiNhieuLenDi.mp3_music.mp3">
+      </audio>
+
+      <hr>
+
+      <div style="color: red;font-size: 40px;">TẠO LINK LIÊN KẾT </div>
+        <div>
+          <a href="https://www.youtube.com/" style="color:blue">Click to Youtube</a></div>
+          <a href="https://www.google.com/" target = "Bruno" >Click to Google</a></div>
+          <a href="https://wetv.vip/" target = "Conan" >Click to WE TV </a></div>
+        </div>
+
+      <hr />
+
+       <div style="color: red;font-size: 40px;">TẠO MỤC LỤC </div>
+       <ul style ="color: green;">
+        <li>Super Sentai là gì ?
+          <img class ="Supersentai" border="0.5" source
+          src="https://upload.wikimedia.org/wikipedia/en/a/ac/Super_Sentai_%28logo%29.png"
+          alt="Ảnh Super sentai"  width="200" height="100" style="display: block"> 
+          
+          <p>Super Sentai Series (スーパー戦隊シリーズ Sūpā Sentai Shirīzu?), dịch ra tiếng Việt là Siêu chiến đội, là tên của loạt phim thuộc thể loại tokusatsu siêu anh hùng của Nhật Bản được sản xuất bởi Tập đoàn Toei và Bandai, và phát sóng trên TV Asahi. Đây là một trong các series tokusatsu nổi tiếng nhất được làm tại Nhật Bản, bên cạnh Ultra Series, Kamen Rider Series, và Metal Hero Series. Loạt phim cũng được chuyển thể tại Mỹ với tên gọi Power Rangers. Chương trình trước đây được phát sóng vào lúc 7:30 sáng (giờ Nhật Bản) vào mỗi Chủ Nhật[1]. Bắt đầu từ tháng 10/2017, giờ phát sóng sẽ được chuyển thành là 9:30 sáng Chủ Nhật.</p>
+        </li>         
+        <li>Nguồn gốc và sự phát triển
+          <p>Cuộc chiến thiện ác được tiếp diễn trong mỗi series, với kết quả là phe thiện thường chiến thắng. Nhân vật chính là nhóm 5 người (có thể ít hoặc nhiều hơn) có được sức mạnh đặc biệt (phép thuật hay công nghệ) để chống lại kẻ thù xâm lược Trái Đất.</p>
+          <p>Ở bộ nhiều tập, sau khi đánh bại quái vật, họ gọi cho "mecha" có thể kết hợp để chống lại quái vật khổng lồ. Mỗi Sentai có một thế giới quan khác nhau với sự liên minh với Sentai trước trong các bộ phim đặc biệt.Phần phim đầu tiên, Himitsu Sentai Goranger năm 1975, được sáng tác bởi Ishinomori Shotaro, tác giả Kamen Rider và Cyborg 009. Ông từ bỏ Sentai khi tác phẩm số 2 của mình, J.A.K.Q. Dengekitai, không được đón nhận tốt</p>
+          <p> Hai loạt phim đó cho đến năm 1994 mới được coi là một phần của loạt series Super Sentai.Battle Fever J, Denshi Sentai Denziman và Taiyo Sentai Sun Vulcan được đồng sản xuất và sở hữu một phần bởi Marvel Entertainment, do đó những series này cũng là một phần của đa vũ trụ Marvel; vũ trụ của họ được gọi là Earth-79203. Marvel đã chính thức tuyên bố vũ trụ này không còn tồn tại.</p> 
+          <p>Mỗi sentai đều có 5 chiến binh tham chiến (một số sentai lúc đầu chỉ có 3 nhưng sau này đã có thêm các chiến binh đặc biệt, riêng Sun Vulcan chỉ có 3 chiến binh), cùng với sự góp mặt của các chiến binh đặc biệt khiến cho số lượng chiến binh tham ra các trận chiến được nâng lên 6.</p>   
+          <p>Lần đầu tiên con số này bị phá vỡ trong Dekaranger với 10 chiến binh (9 trong TV Series và 1 trong movie), Kyoryuger cũng có 10 chiến binh (Red, Black, Blue, Green, Pink, Gold, Silver, Violet, Cyan, Grey, Navy) trong đội hình. Còn Uchuu Sentai Kyuranger phá kỷ lục với 12 chiến binh chính thức.</p>  
+          <p>Một số chiến binh còn có cả Power Up, tức là nâng cấp một vài dụng cụ như áo giáp, găng tay, mũ hay vũ khí. Lần đầu tiên chuyện này xảy ra là Battle Armor của Dyna Black trong Dynaman</p>
+          <p>Sentai có nhiều Power Up nhất là Zyuden Sentai Kyoryuger và chiến binh có nhiều Power Up nhất là Kyoryu Red của Kyoryuger. Ninninger có tới 4 Akaninger và tổng số chiến binh của sentai này là 10 người, là sentai có số lượng chiến binh đỏ phá vỡ kỷ lục trước đó (Timeranger, Shinkenger, Magiranger có 2 chiến binh đỏ).</p>
+        </li>
+        <li>Các chiến đội
+          <p>Himitsu Sentai Goranger (秘密戦隊ゴレンジャー, Himitsu Sentai Gorenjā?, dịch là Chiến đội Bí mật Goranger), phát hành 1975-1977. Đây là series có nhiều tập nhất.</p>
+          <p> J.A.K.Q. Dengeki Tai (ジャッカー電撃隊, Jakkā Dengeki Tai?, dịch là Chiến đội thần tốc J.A.K.Q.) phát hành 1977. Đây là series có ít tập nhất.</p>  
+          <p>Battle Fever J (バトルフィーバーJ, Batoru Fībā Jei?, dịch là Chiến đội Vũ công Battle Fever J) là series trong năm 1979.
+             Denshi Sentai Denziman (電子戦隊デンジマン, Denshi Sentai Denjiman,dịch là Chiến Đội Điện tử Denjiman) là series trong năm 1980.</p>   
+          <p>Taiyou Sentai Sun Vulcan (太陽戦隊サンバルカン, Taiyō Sentai San Barukan?, dịch là Chiến Đội Thái dương Sun Vulcan) là series trong năm 1981. Đây là series chỉ có 3 chiến binh, không có chiến binh nữ.</p>   
+          <p>Dai Sentai Goggle V (大戦隊ゴーグルファイブ, Dai Sentai Gōguru Faibu?, dịch là Chiến đội Vĩ đại Goggle V(five)) là series trong năm 1982.</p>   
+          <p>Kagaku Sentai Dynaman (科学戦隊ダイナマン,Kagaku Sentai Dainaman?,tạm dịch là Chiến Đội Khoa học Dynaman) là series trong năm 1983.</p>  
+          <p>Choudenshi Bioman (超電子バイオマン, Chō Denshi Baioman?, dịch là Chiến đội Siêu điện tử Bioman) là series trong năm 1984.</p>   
+          <p>Dengeki Sentai Changeman (電撃戦隊チェンジマン, Dengeki Sentai Chenjiman?, dịch là Chiến đội Siêu điện kích Changeman) là series trong năm 1985.</p>      
+          <p>Choushinsei Flashman (超新星フラッシュマン, Chōshinsei Furasshuman?, dịch là Chiến đội Siêu tân tinh Flashman) là series trong năm 1986.</p>   
+          <p>Hikari Sentai Maskman (光戦隊マスクマン, Hikari Sentai Masukuman?, dịch là Chiến Đội Ánh sáng Maskman) là series trong năm 1987, đây là series đầu tiên có chiến binh thứ 6.</p>   
+          <p>Choujuu Sentai Liveman (超獣戦隊ライブマン, Chōjū Sentai Raibuman?, dịch là Chiến Đội Siêu thú Liveman) là series trong năm 1988. Đây là series kỉ niệm 10 năm Super Sentai.</p>   
+          <p> Kousoku Sentai Turboranger (高速戦隊ターボレンジャー, Kōsoku Sentai Tāborenjā?, dịch là Chiến Đội Siêu tốc Turboranger) là series trong năm 1989.</p>  
+          <p>Chikyuu Sentai Fiveman (地球戦隊ファイブマン, Chikyū Sentai Faibuman?, dịch là Chiến Đội Địa cầu Fiveman) là series trong năm 1990.</p>   
+          <p>Choujin Sentai Jetman (鳥人戦隊ジェットマン, Chōjin Sentai Jettoman?, dịch là Chiến Đội Điểu nhân Jetman) là series trong năm 1991.</p>   
+          <p>Kyoryu Sentai Zyuranger (恐竜戦隊ジュウレンジャー, Kyōryū Sentai Jūrenjā?, dịch là Chiến Đội Khủng long Zyuranger) là series trong năm 1992.</p>   
+          <p>Gosei Sentai Dairanger (五星戦隊ダイレンジャー, Gosei Sentai Dairenjā?, dịch là Chiến Đội Ngũ tinh Dairanger) là series trong năm 1993. Đây là series kỉ niệm 15 năm Super Sentai.</p>   
+          <p>Ninja Sentai Kakuranger (忍者戦隊カクレンジャー, Ninja Sentai Kakurenjā?, dịch là Chiến Đội Nhẫn giả Kakuranger) là series trong năm 1994.</p>   
+          <p>Chouriki Sentai Ohranger (超力戦隊オーレンジャー, Chōriki Sentai Ōrenjā?, dịch là Chiến Đội Siêu lực Ohranger) là series trong năm 1995.</p>   
+          <p>Gekisou Sentai Carranger (激走戦隊カーレンジャー, Gekisō Sentai Kārenjā?, dịch là Chiến Đội Kích Tẩu Carranger) là series trong năm 1996. Đây là mùa kỉ niệm 20 năm của Super Sentai (đã bao gồm Goranger và J.A.K.Q)</p>   
+          <p>Denji Sentai Megaranger (電磁戦隊メガレンジャー, Denji Sentai Megarenjā?, dịch là Chiến Đội Điện từ Megaranger) là series trong năm 1997. Đây là series thứ 3 về điện tử (sau Denziman và Bioman).</p>   
+          <p>Seijuu Sentai Gingaman (星獣戦隊ギンガマン, Seijū Sentai Gingaman?, dịch là Chiến Đội Tinh thú Gingaman) là series trong năm 1998.</p>   
+          <p>Kyuukyuu Sentai GoGo-V (救急戦隊ゴーゴーファイブ, Kyūkyū Sentai GōGō Faibu?, dịch là Chiến đội Cứu hộ GoGo-V(five)) là series trong năm 1999.</p>   
+          <p>Mirai Sentai Timeranger (未来戦隊タイムレンジャー, Mirai Sentai Taimurenjā?, dịch là Chiến Đội Tương lai Timeranger) là series trong năm 2000.</p>   
+          <p> Hyakujuu Sentai Gaoranger (百獣戦隊ガオレンジャー, Hyakujū Sentai Gaorenjā?, dịch là Chiến Đội Bách thú Gaoranger) là series trong năm 2001. Đây là series kỉ niệm 25 năm Super Sentai.</p>  
+          <p>Ninpuu Sentai Hurricaneger (忍風戦隊ハリケンジャー, Ninpū Sentai Harikenjā?, dịch là Chiến Đội Nhẫn Phong Hurricanger) là series trong năm 2002.</p>   
+          <p>Bakuryuu Sentai Abaranger (爆竜戦隊アバレンジャー, Bakuryū Sentai Abarenjā?, dịch là Chiến Đội Bộc long Abaranger) là series trong năm 2003.</p>   
+          <p>Tokusou Sentai Dekaranger (特捜戦隊デカレンジャー, Tokusō Sentai Dekarenjā?, dịch là Chiến đội Cảnh sát đặc nhiệm Dekaranger) là series trong năm 2004.</p>   
+          <p>Mahou Sentai Magiranger (魔法戦隊マジレンジャー, Mahō Sentai Majirenjā?, dịch là Chiến đội Ma Pháp Magiranger) là series trong năm 2005.</p>   
+          <p> GoGo Sentai Boukenger (轟轟戦隊ボウケンジャー, GōGō Sentai Bōkenjā?, dịch là Chiến đội Sấm sét Boukenger) là series trong năm 2006. Đây là series kỉ niệm 30 năm Super Sentai.</p>  
+          <p>Juken Sentai Gekiranger (獣拳戦隊ゲキレンジャー, Jūken Sentai Gekirenjā?, dịch là Chiến đội Thú Quyền Gekiranger") là series trong năm 2007. Đây là series thứ 3 về võ thuật (sau Maskman và Dairanger).</p>   
+          <p>Engine Sentai Go-onger (炎神戦隊ゴーオンジャー, Enjin Sentai Gōonjā?, dịch là Chiến đội Cơ động Go-onger) là series trong năm 2008. Go-onger là series Super Sentai đầu tiên có bài hát chủ đề đạt top 10 bảng xếp hạng hằng tuần Oricon ở vị trí thứ 4, sau khi bán được 22,000 bản trong tuần đầu ra mắt.[7] và bộ phim liên minh của nó, Engine Sentai Go-onger vs. Gekiranger là bộ phim liên minh Super Sentai thứ 15.[8] Đây là series thứ 3 sử dụng motif xe hơi (sau Turboranger và Carranger).</p>   
+          <p> Samurai Sentai Shinkenger (侍戦隊シンケンジャー, Samurai Sentai Shinkenjā?, dịch là Chiến đội Samurai Shinkenger ) là series trong năm 2009. Như Go-onger trước đó, bài hát chủ đề của nó cũng đạt thứ hạng cao trong bảng Oricon, ở vị trí thứ 4 trong ngày ra mắt.[9] Shinkenger là season đầu tiên của series Super Sentai có sự team-up bắt chéo với dòng phim chiếu song song là Kamen Rider Series: Kamen Rider Decade.[10][11] Đây là series đầu tiên xuất hiện nữ chiến binh đỏ.</p>  
+          <p>Tensou Sentai Goseiger (天装戦隊ゴセイジャー, Tensō Sentai Goseijā?, dịch là Chiến đội Thiên Sứ Goseiger) là series trong năm 2010. Đây là series thứ 3 về siêu nhiên (sau Changeman và Magiranger).</p>   
+          <p>Kaizoku Sentai Gokaiger (海賊戦隊ゴーカイジャー, Kaizoku Sentai Gōkaijā?, dịch là Chiến Đội Hải tặc Gokaiger), là series trong năm 2011, với mô típ cướp biển và là series kỉ niệm 35 năm Super Sentai, với những anh hùng có khả năng biến thân thành các chiến binh đời trước, cũng như có sự xuất hiện của các nhân vật từ các series trước đó. Đây là series thứ 2 về kho báu (sau Boukenger).</p>   
+          <p>Tokumei Sentai Go-Busters (特命戦隊ゴーバスターズ, Tokumei Sentai Gōbasutāzu?, dịch là Chiến đội Đặc mệnh Go-Busters), là series trong năm 2012.</p>   
+          <p>Hikonin Sentai Akibaranger (非公認戦隊アキバレンジャー, Hikōnin Sentai Akibarenjā?), tạm dịch là Chiến đội Không chính thức Akibaranger, là series 15+ không chính thức dành cho fan Super Sentai trong năm 2012.</p>   
+          <p>Zyuden Sentai Kyoryuger (獣電戦隊キョウリュウジャー, Jūden Sentai Kyōryūjā?, dịch là Chiến đội Điện long Kyoryuger), là series trong năm 2013, đây là series thứ 3 sử dụng motif khủng long (sau Zyuranger và Abaranger) và là series thứ 4 không có chiến binh màu vàng (sau J.A.K.Q, Battle Fever và Changeman).</p>   
+          <p> Hikonin Sentai Akibaranger Season Tsuu  (非公認戦隊アキバレンジャーシーズン痛, Hikonin Sentai Akibaranger Season Tsuu ?) , tạm dịch là Chiến đội Không chính thức Akibaranger Mùa hai. Đây là phần tiếp theo của Akibaranger, mặc dù trong chương trình này, nhiều phần của mùa giải đầu tiên đã được viết lại.</p>  
+          <p> Ressha Sentai ToQger (列車戦隊トッキュウジャー, Ressha Sentai Tokkyūjā?, dịch là Chiến Đội Hỏa xa ToQger), là series trong năm 2014. Đây cũng là series đầu tiên lấy chủ đề về tàu hoả.</p>  
+          <p>Shuriken Sentai Ninninger (手裏剣戦隊ニンニンジャー, Shuriken Sentai Ninninjã?, dịch là Chiến Đội Nhẫn thuật Ninninger), là series trong năm 2015, đây là series thứ 3 về ninja (sau Kakuranger và Hurricanger).</p>   
+          <p>Doubutsu Sentai Zyuohger (動物戦隊ジュウオウジャー, Dōbutsu Sentai Jūōjā?, dịch là Chiến đội Thú vương Zyuohger) là series trong năm 2016. Đây là series kỉ niệm 40 năm Super Sentai và là series thứ 5 về động vật (sau Sun Vulcan, Liveman, Gingaman và Gaoranger).</p>   
+          <p>Uchuu Sentai Kyuranger (宇宙戦隊キュウレンジャー, Uchuu Sentai Kyōrenjā?, dịch là Chiến đội Vũ trụ Kyuranger) là series trong năm 2017, nói về đề tài vũ trụ. Đây là series đầu tiên có khởi đầu là 9 người và số chiến binh chính thức là 12 - nhiều nhất trong lịch sử, không như các series trước đây chỉ với 3 hoặc 5 người và lần đầu tiên xuất hiện nữ chiến binh lục trong đội hình chính.</p>   
+          <p>Kaitou Sentai Lupinranger VS Keisatsu Sentai Patranger (快盗戦隊ルパンレンジャー VS 警察戦隊パトレンジャー, Kaitō Sentai Rupanrenjā VS Keisatsu Sentai Patorenjā?, dịch là Chiến đội Khoái Đạo Lupinranger VS Chiến đội Cảnh Sát Patranger), là series trong năm 2018. Đây là series đầu tiên có hai Sentai chính thức (có ý kiến cho rằng Gouraiger là một Sentai không thuộc Hurricaneger nên series Hurricaneger mới là series đầu tiên có 2 Sentai) và là series sentai thứ 4 về hình sự (sau Timeranger, Dekaranger và Go-Busters).</p>   
+          <p>Kishiryu Sentai Ryusoulger (騎士竜戦隊リュウソウジャー, Kishiryū Sentai Ryūsoujā?, dịch là Chiến đội Kị sĩ long Ryusoulger), là series trong năm 2019. Đây là series thứ 4 nói về loài khủng long (sau Zyuranger, Abaranger và Kyoryuger) và là series Sentai thứ năm không có chiến binh màu vàng.</p>   
+          <p>Mashin Sentai Kiramager (魔進戦隊キラメイジャー, Mashin Sentai Kirameijā?, dịch là Chiến đội Ma tiến Kirameiger), là series dự kiến ra mắt năm 2020 và là Super Sentai đầu tiên của thời Reiwa. Bộ phim sử dụng motift xe cộ và là serie thứ hai về đề tài phép thuật (sau Magiranger) và là series phim Sentai thứ 2 có nữ chiến binh lục trong đội hình chính (sau Kyuranger).</p>
+        </li>   
+        <li style ="color: red;">Mecha là gì ?
+          <p>Chủ đề chính tạo nên các series Super Sentai là các mecha khác nhau do các đội dùng.
+             Tên Robot thường được đặt theo tên đội tương ứng và thường có chữ oh, dai, robo hay king. Đội đầu tiên có robo không được đặt tên tương ứng là Hikari Sentai Maskman với Great Five và Galaxy Robo. Và cũng chính nó là Sentai đầu tiên có robot do năm mảnh hợp thành. Robot đầu tiên, Battle Fever Robo trong Battle Fever J chỉ là một con robot khổng lồ bình thường. Tiếp theo đó, robot khổng lồ đầu tiên biến hình từ một chiếc xe là Denshi Sentai Denziman với DaiDenjin từ Denji Fighter, và sau đó có sự kết hợp, hay robot, là khi Cosmo Vulcan và Bull Vulcan hợp lại thành Sun Vulcan Robo trongTaiyou Sentai Sun Vulcan.</p>
+
+          <p>Lần đầu có sentai dùng robot thứ hai là Choushinsei Flashman với Flash King và Flash Titan.
+           Lần đầu có hai robot kết hợp, hay “Super Gattai” (スーパー合体 Sūpā Gattai?) xảy ra trong Choujuu Sentai Liveman với Live Robo và Live Boxer trở thành Super Live Robo.</p>
+
+          <p>Lần đầu tiên có robot biến hình từ căn cứ của nhóm, Turbo Builder của Kousoku Sentai Turboranger. Robot số ba xuất hiện là Tetraboy trong Choujin Sentai Jetman bên cạnh JetIcarus và JetGaruda.</p>
+
+          <p>Sự kết hợp 7 phần của Ultimate DaiZyujin trong Kyōryū Sentai Zyuranger là con số lớn nhất lúc đó trước khi bị Super DaiBouken và Ultimate DaiBouken trong GoGo Sentai Boukenger qua mặt, với 9 và 10 mecha.
+          Giới hạn này, cũng bị phá bởi Engine-Oh G12 có 12 phần trong Engine Sentai Go-onger và Kyoryu Samurai Ha-oh trong Samurai Sentai Shinkenger cũng với 12 phần và chỉ xuất hiện duy nhất 1 tập. Hiên tại, kỉ lục thuộc về Gattai mới nhất của Zyuohger với 14 mecha.</p>
+
+          <p>Lần đầu tiên có các mecha có thể hoán đổi là trong Hyakujuu Sentai Gaoranger.</p>
+
+          <p>Juken Sentai Gekiranger lần đầu tiên có mecha của phe phản diện RinLion và RinChameleon hợp thể với GekiTohja trở thành GekiRinTohja.</p>
+
+          <p>Các mecha và Dino Brace trong Bakuryuu Sentai Abaranger
+          và mecha tronh Kishiryu Sentai Ryusoulger và các Engine trong Go-onger
+          có thể biết nói chuyện.</p>
+
+          <p>Còn Go-onger, ngoài việc có robot 12 phần, còn lần đầu tiên trong lịch sử có robot độc lập số 5, Kyoretsu-Oh.Và con số này đã bị phá vỡ bởi Zyuden Sentai Kyoryuger với số robot độc lập là 6 (Kyoryuzin,Pteraidenoh Western,Plezu-oh,Gigant Bragioh,Spino Daioh,Gigant Kyoryuzin)</p>
+        </li>
+      </ul>
+      
+      <hr>
+
+      <ol>
+        <li id="First">Tác hại của Internet ?
+          <p>1. Não không có thời gian nghỉ ngơi</p>
+          <p>2. Giảm tương tác trực tiếp</p>
+          <p>3. Bắt nạt qua mạng</p>
+          <p>4. Tác hại của mạng xã hội khiến bạn suy nghĩ tiêu cực</p>
+          <p>5. Bị mạo danh</p>
+          <p>7. Thích được chú ý</p>
+          <p>8. Tác hại của mạng xã hội làm bạn dễ bị mất ngủ</p>
+          <p>9. Tình yêu dễ đổ vỡ</p>
+          <p>10. Tác hại của mạng xã hội khiến bạn trở nên tự ti</p>
+        </li> 
+        <!--id: Để phân biệt vs các thuộc tính khác, khi thay đổi sẽ chỉ thay đổi 1 thuộc tính có id chỉ định-->
+
+        <li class="Second">Tác dụng phụ của thuốc ngủ là gì ?
+          <p>Các tác dụng phụ của các thuốc ngủ thường gặp có thể bao gồm: ngứa ran ở lòng bàn tay, cánh tay, bàn chân, cẳng chân, khó giữ thăng  bằng, chóng mặt, buồn ngủ vào ban ngày, khô miệng. Ngoài ra, người bệnh còn cảm thấy thay đổi cảm giác ăn uống như thèm ăn hoặc chán ăn, ợ nóng, ợ hơi, táo bón hoặc tiêu chảy, đau dạ dày, đau đầu, suy nhược, tinh thần chậm chạp vào ngày hôm sau, có những giấc mơ bất thường, ...</p>
+
+          <p>Đặc biệt, thuốc ngủ có thể cản trở việc thở bình thường và có thể gây nguy hiểm ở những người mắc một số vấn đề về phổi mãn tính như hen suyễn, khí phế thũng hoặc các dạng bệnh phổi tắc nghẽn mãn tính (COPD).
+             Dị ứng là một trong những tác dụng phụ của thuốc ngủ có thể xảy ra. Nếu bạn có tiền sử dị ứng với bất kỳ loại thuốc ngủ nào, hãy nói chuyện với bác sĩ để được lựa chọn loại thuốc phù hợp. Dưới đây là những dấu hiệu đầu tiên của việc dị ứng với thuốc ngủ:</p>
+
+          <p>Gặp vấn đề về tầm nhìn như mờ mắt :
+             Đau ngực, khó thở hoặc khó nuốt
+             Tim đập mạnh
+             Nôn hoặc buồn nôn
+             Khản tiếng, hụt hơi
+             Ngứa, phát ban
+             Sưng mắt, mặt, môi, lưỡi hoặc cổ họng
+             Ngoài ra, một phản ứng dị ứng cấp tính rất nghiêm trọng của thuốc ngủ có thể gây tử vong đó là sốc phản vệ. Một tác dụng phụ khác của thuốc ngủ là phản ứng dị ứng dẫn tới phù mạch và làm sưng mặt nghiêm trọng. Nếu gặp phải phản ứng dị ứng nghiêm trọng, hãy đưa bệnh nhân tới bệnh viện gần nhất để được cấp cứu kịp thời.></p>
+
+        </li>
+        <li class="Second">Tác hại của mai thúy là gì ?
+          <p>Đối với sức khỏe con người:
+          <p>Hệ hô hấp: Các chất ma túy kích thích hô hấp làm tăng tần số thở gây ức chế hô hấp, nhất là khi dùng quá liều. Nhiều trường hợp ngưng thở nếu không cấp cứu kịp thời sẽ dẫn đến tử vong, đôi khi ngưng thở rất đột ngột. Ngoài ra, sau khi dùng ma túy (nhất là cocaine) có thể gây phù phổi cấp, tràn khí màng phổi, tràn khí trung thất, xuất huyết phế nang, viêm tiểu phế quản tắc nghẽn, viêm phổi, lên cơn hen phế quản…</p>
+
+          <p>Hệ tim mạch: Các chất ma túy sẽ kích thích làm tăng nhịp tim, ảnh hưởng trực tiếp lên tim, gây co thắt mạch vành có thể tạo nên cơn đau thắt ngực, nặng hơn có thể gây nhồi máu cơ tim. Chúng cũng là nguyên nhân của các rối loạn nhịp đe dọa tính mạng người dùng ma túy. Ngoài ra còn gây nên tình trạng co mạch làm tăng huyết áp.</p>
+
+          <p>Hệ thần kinh: Ngoài tác dụng kích thích thần kinh giai đoạn đầu gây hưng phấn, sảng khoái, lệ thuộc thuốc…, cũng có thể gây các tai biến như: co giật, xuất huyết dưới nhện, đột quỵ…</p>
+
+          <p>Hệ sinh dục: Ở người nghiện ma túy, khả năng tình dục bị suy giảm một cách rõ rệt, và hậu quả này vẫn tồn tại sau khi ngưng dùng thuốc một thời gian khá lâu. Ở những nam giới dùng ma túy trong thời gian dài sẽ bị chứng vú to và bất lực. Còn ở phụ nữ sẽ bị rối loạn chu kỳ kinh nguyệt, rong kinh, tăng tiết sữa bất thường và vô sinh</p>
+
+          <p>Đối với xã hội: Số người nghiện càng tăng thì lượng tiền bạc để hút chích càng lớn, càng có nhiều gia đình người nghiện bị phá sản, phát sinh nhiều tệ nạn trộm cắp, cướp giật… Bản thân con nghiện cũng trở nên ốm yếu, sức lao động ngày càng sút kém, trở thành gánh nặng cho gia đình và xã hội.</p>
+        </li>                                          <!--ID và Class-->
+        <li class="Second">Tác hại của thuốc lá là gì ?
+          <p> Khói thuốc gây ảnh hưởng nghiêm trọng tới sức khỏe của phụ nữ mang thai và thai nhi, gây ung thư phổi, khí phế thũng, rụng tóc và đục nhân mắt.</p>
+
+          <p>» Thuốc lá gây ra 90% trường hợp ung thư phổi, 75% các trường hợp phổi tắc nghẽn mãn tính và 25% các trường hợp bệnh tim thiếu máu cục bộ.</p>
+
+          <p>»  Hút thuốc lá làm giảm tuổi thọ ở nam khoảng 13,2 năm và ở phụ nữ khoảng 14.5 năm những bệnh gây ra do thuốc lá không những làm giảm tuổi thọ mà còn lấy đi chất lượng sống của bạn nhiều năm trước khi chết do nó hạn chế các hoạt động vì khó thở, mệt mỏi khi vận động, làm việc, vui chơi.</p>
+
+          <p>» Không chỉ người hút thuốc bị nguy hiểm mà người hút thuốc lá thụ động cũng chịu ảnh hưởng nặng nề không kém. Hút thuốc thụ động là hít phải (còn gọi là phơi nhiễm) khói thuốc, gây nhiều bệnh nguy hiểm ở cả người lớn và trẻ em. Ở người lớn, hút thuốc lá thụ động gây ung thư phổi, ung thư vú, các bệnh về tim mạch, bệnh động mạch vành, xơ vữa động mạch, dễ sinh non. Ở trẻ em, phơi nhiễm khói thuốc làm tăng nguy cơ mắc viêm đường hô hấp, viêm tai giữa, hen suyễn, kém phát triển chức năng phổi...</p>
+        </li>
+        <li class="Second a1">Tác hại của game online ?
+          <p>Nghiện dopamine</p>
+          <p>Ảnh hưởng tới sức khỏe tâm thần</p>
+          <p>Nghiện game có thể dẫn đến béo phì hoặc suy dinh dưỡng</p>
+          <p>Mỏi mắt</p>
+          <p>Ảnh hưởng tới xương khớp</p>
+        </li>
+        <!--Class: Để gộp chung các đối tượng cần thay đổi giống nhau-->
+      </ol>
+
+      <hr />
+      <div style="color: red;font-size: 40px;">TẠO BẢNG TRONG CSS CÁCH 1 </div>
+      <table target ="Stam" border="2">
+        <thead>
+          <!--Đầu bảng-->
+          <th>STT</th>
+          <th>Tên</th>
+          <!--Tiêu đề bảng-->
+          <th>Phái</th>
+          <th>Địa chỉ</th>
+        </thead>
+
+        <tbody>  <!--Thân bảng-->
+          <tr>
+            <td>1</td>
+            <td>Đinh Bảo Minh</td>
+            <!--Nội dung tương ứng vs th-->
+            <td>Nam</td>
+            <td>HCM</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Bruno Fernandes</td>
+            <!--Nội dung tương ứng vs th-->
+            <td>Nam</td>
+            <td>Potugal</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Erling Haaland</td>
+            <!--Nội dung tương ứng vs th-->
+            <td>Nam</td>
+            <td>Norway</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Kylian Mbappe</td>
+            <!--Nội dung tương ứng vs th-->
+            <td>Nam</td>
+            <td>France</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br>
+
+      <div style="color: red;font-size: 40px;">TẠO BẢNG TRONG CSS CÁCH 2 </div>
+      <table target = "Blanc" border="1">
+        <tr>
+            <td style="text-align: center;">STT</td>
+            <td style="text-align: center;">Họ và Tên</td>
+            <td style="text-align: center;">Giới Tính</td>
+            <td id ="Min">Nơi Ở</td>
+            <!-- text-align : Căn Giữa -->
+          </tr>
+        <tr>
+            <th>1</th>
+            <th>Đinh Bảo Minh</th>
+            <th class ="Minh">Nam</th>
+            <th class ="Minh">Hồ Chí Minh , Việt Nam</th>
+          </tr>
+        <tr>
+            <th>2</th>
+            <th>Bruno Fernandes</th>
+            <th>Nam</th>
+            <th>Manchester , England</th>
+        </tr>  
+        <tr>
+            <th>3</th>
+            <th>Erling Haaland</th>
+            <th>Nam</th>
+            <th>Dortmun , Germany</th>
+        </tr>
+        <tr>
+            <th>4</th>
+            <th>Kylian Mbappe</th>
+            <th>Nam</th>
+            <th>Paris , France</th>
+        </tr>
+      </table>
+
+      <hr />
+      
+      <div style="color: red;font-size: 40px;">TẠO BUTTON VÀ CÁC NÚT TRONG CSS </div>
+      <div>Ô NHẬP TEXT :
+        <!-- 1 ô để nhập thông tin vào-->
+        <input type="Text id"  id ="Nut" />
+      </div>
+
+      <div> Ô ĐỂ TICK :
+        <input type="checkbox" />
+        <!-- ô để tick vào , có thể chọn nhiều ô-->
+      </div>
+
+      </div> Ô CHỌN 1 :
+        <!--ô chỉ cho pháp chọn 1-->
+      <input type="radio" name="Giới tính" />
+      </div>
+
+      <div> NÚT BẤM :
+       <!--Tạo nút bấm-->
+       <button style ="border:1px solid green;color: blue;">OK</button> <!--Cách 1-->
+       <input type="button" value="OKEY">                                   <!--Cách 2-->
+      </div>
+      
+
+      <hr>   <!--Xuống hàng và kẻ 1 vạch ngang ngăn cách-->
+      
+      <!--Tạo Form đăng nhập-->
+      <div style = "color: red;font-size: 40px;">ĐĂNG NHẬP TÀI KHOẢN CÁ NHÂN</div>
+      <form class ="forms" action="Account/Login" method="post">
+        <label>         <!--Label : Khi kích vào " Tên Đăng Nhập " vẫn có thể nhập bằng bàn phím-->
+          <div style="color: red">Tên Đăng Nhập :</div>
+          <input type="text" placeholder="Tên bạn là gì ?" name="id"/>
+        </label>
+        <label>
+          <div style ="color: red">Mật Khẩu :</div>
+          <input type="password" name="pw"/>
+        </label>
+        <div></div>
+        </label>
+        <input type="submit" style="color : blue" value="Đăng Nhập" />
+        <label>
+        <br>
+        <a href="http://www.forgotpassword.vn">Quên Mật Khẩu</a>
+        
+      </form>
+      <hr/>
+
+      <!--Tạo form chọn lựa-->
+      <div style ="color: red;font-size: 40px;">TẠO FORM LỰA CHỌN</div>
+      <div style ="color: green"> Giới Tính :
+        <label><input type="radio" name ="gender" value="Na"/>Nam</label>
+        <label><input type="radio" name ="gender" value="Nu"/>Nữ</label>
+        <label><input type="radio" name ="gender" value="No"/>Không Xác Định</label>
+        <!-- radio : Chỉ được chọn 1 -->
+      </div>
+      
+      <div style ="color: red">Quốc Gia :
+         <select name="country">
+           <option value="VN">Việt Nam</option>
+           <option value="US">Hoa Kì</option>
+           <option value="CN">Trung Quốc</option>
+           <option value="OT">Other</option>
+           <!-- option : Danh sách lựa chọn -->
+      </select>
+      </div>
+      
+      <div style = "color: yellow">Sở Thích :</div> 
+      <label><input type="checkbox" name="gender" value="0"/>Chơi Game</label>
+      <label><input type="checkbox" name="gender" value="1"/>Nghe Nhạc</label>
+      <label><input type="checkbox" name="gender" value="2"/>Bắn Bi</label>
+      <label><input type="checkbox" name="gender" value="3"/>Du Lịch</label>
+      <label><input type="checkbox" name="gender" value="4"/>Chụp Ảnh</label>
+      <!-- checkbox : Chọn bao nhiêu cũng được -->
+
+      <div style="color: orangered">Ghi Chú :</div>
+      <textarea name="Ghi Chú" cols ="50" rows="3"></textarea>
+      <hr/>
+      <input type="submit" style ="color: red" value ="OK"/>
+      <input type="reset" style="color: blue" value="Reset"/>
+
+       <hr>
+
+      <div style="color: red;font-size: 40px;">TEST BIẾN TRONG CSS </div>
+      <h2>Test Biến Trong CSS   : h2</h2>
+      <h3>Test Biến Trong CSS 2 : h3</h3>
+      <h4>Test Biến Trong CSS 3 : h4</h4>
+       
+      <hr>
+
+      <div style="color: red;font-size: 40px;">ĐƠN VỊ TRONG CSS </div>
+      <div class="box"></div>
+      <div id="box" class="minnn">Đinh Bảo Minh</div>
+
+      <div><h1>Tạm biệt Các Bạn</h1></div>
+      <div style="color :blue;font-size:40px;background-color:yellow">Tạm biệt Các Bạn</div>
+    </div>
+    <hr>
+
+    <footer>
+      <h3 style="font-size: 20px;border-color: blue">Thông tin liên lạc :</h3>
+      <ul>
+        <li>Email:Taokhongminh@gmail.com</li>
+        <li>Facebook :<a href ="https://www.facebook.com/liangming.4869"> Minh Bảo </a></li>
+      </ul>
+    </footer>
+
+    <hr>
+
+    <div style="color: blue;font-size: 50px">THUỘC TÍNH VỊ TRÍ ABSOLUTE TRONG CSS</div>
+    <div class="box1">
+      <div class="box-child"></div>
+    </div>
+    <hr>
+
+    <div style="color: blue;font-size: 50px;margin-bottom: 50px;">THUỘC TÍNH VỊ TRÍ  FIXED  TRONG CSS</div>
+
+    <hr>
+    <div style="color: blue;font-size: 50px;margin-bottom: 50px;">CÁC CÁCH CĂN GIỮA TRONG CSS</div>
+    <div class="box3">
+      <h5>CENTER ME</h5>
+      <h5>CENTER ME</h5>
+      <h5>CENTER ME</h5>
+    </div>
+
+    <hr>
+      <!-- <div class ="fixed">
+        <div class="mincoNY">Chúc các bạn đẹp trai như Min Có NY</div>
+      </div>
+      <div class="fixed2">
+        <div class="minsapcoNY">Chào mừng đến với shop Min Có NY</div>
+      </div> -->
+
+
+      <div class="sl-footer">
+        <div class="container2">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6">
+              <div class="sa-fthotline">
+                <div class="sa-ftarow clearfix">
+                  <div class="sa-ftacol sa-fthnum">
+                    <p>
+                      <a href="tel0966932267" title="color: #ffffff">
+                        Hotline: 0966932267
+                      </a>
+                    </p>
+                    <p>
+                      <a href="https://www.facebook.com/xiaoming4869" target="_blank" title="ĐINH BẢO MINH">Đinh Bảo Minh</a>
+                    </p>
+                  </div>
+                  <div class="sa-ftacol sa-fthwork">TP.Hồ Chí Minh</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6">
+              <ul class="sl-ftviews">
+                <li>
+                  <span class="sl-fti1">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpBQjhFM0M1NkRFMTdFODExOTQ2RUNDNEE0ODM5ODA2QyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyNkE5ODRGQjFCN0ExMUU4OUY4MEQzRUFFNkMyNkE5OSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyNkE5ODRGQTFCN0ExMUU4OUY4MEQzRUFFNkMyNkE5OSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjM2MzFCN0ZFNDQxOUU4MTE4QUU3RTUwQkRFOTU3MUNEIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkFCOEUzQzU2REUxN0U4MTE5NDZFQ0M0QTQ4Mzk4MDZDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+TfzaMgAAAblJREFUeNrEl79LxDAYhq+xoKDCgaOIiPjjQEGE2wTFQVAc1MlB3Fzc6uDk4l/grIsg/gNOwok46OQhooi/Bh2cHBz05BBB8f0gkVDSa9Mk7QcPtNeU520vDV+8IAgKFqoVbIJx8AEewS24Aw/gJepG34K8DRyCMem3ydCYGrjngS7BLninC8yBXFXtoAyWwRY4B0XTAEnlquoHSyYBTOSiymkD6MivwR54VVwrpZmEOvIDsAB+QQe4Ap3S9UHdN6D72ve5nOoNHCsmZhdz+J+PSsceGFKMGfAdTrh10AwuwGIo0P888B3O9iawFjOmxBx/aoW0AbKQUxVZjnKqE5aj/AxssBzlM6DOcpTXxErYIslp5frJSi4CrEryYdAHnrKQiwAj0vk3eAYTlkMo5SJAVTqugG7ew9kKESkX0m1wxM976Nu0GILk01FyEYBe+5yDEEL+2WiQ+AzrlkMkkocbElshEstVHZEIUUkZQkse1ZJRiPkUIbTljXrCuBBToRUzlTyuKY0K0ctbLc9UnqQrVoWgjecNv9dInrQtD4dg/OlPTeU6GxMKMQtWeHdLO54d8GW6Tv8JMAA0q4pXBJDECwAAAABJRU5ErkJggg==" alt="Tài khoản đã bán">
+                  </span>
+                  <p>
+                    <strong>103522</strong>
+                    Acc đã bán
+                  </p>
+                </li>
+                <li>
+                  <span class="sl-fti2">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAdCAYAAADPa766AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpBQjhFM0M1NkRFMTdFODExOTQ2RUNDNEE0ODM5ODA2QyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyRkU4NjMxODFCN0ExMUU4QUQ5QzhGQkEyOUNFNTc2NiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyRkU4NjMxNzFCN0ExMUU4QUQ5QzhGQkEyOUNFNTc2NiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjM2MzFCN0ZFNDQxOUU4MTE4QUU3RTUwQkRFOTU3MUNEIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkFCOEUzQzU2REUxN0U4MTE5NDZFQ0M0QTQ4Mzk4MDZDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+0j9KPAAAAv5JREFUeNq8l1uITVEYx/c5s12HGUJGbiODB5cIQ1HG/TIuDyOTmpiUpMickyRGxAsejqJcSknuYTzxRLkVKXnBmVxzGZcwjAfM6Tjj/+l/tNvtvdY3Mydf/Trn7LXOt7611v/71tqRWCzmhNgIUAkGgS/gMrjptM6mgkWgD3gNzoGkt0Mikfj76YY42AW2gKjn2SZwAawEPywBdAXHwDLf821gL323eBuiAU7Wg9qQtqXgqGIlDgcEkR1vM6gJavDPZKdlkOVgjKF9NKiy+NgBupgCmQB6KGY8y9A2E0Qs/y8Ak7wP/BrJV4owq5EpHLgQ1IM6cBs0gP6KYEIDea4IYj84C66A+b42EeIaUAbugZ4GP/WmrXkCrhv+/JLZcz4gCIfbehoMBhsMfm5xLGPWrAafQhwcAXMsGskDe8AZ0BTQ/hmssmWN2DNQylmnPM+vckvmKbZvPLdFfGT4LMXfpRzDMWlEbBj3+DF4D/qBb+AjRVqgFHQvVuI0v38AjVxN2f6nYYEMBIdAucG5ZMQrRRDN4A04zhUIMhH7Ouru39aUUOXllgEWgxOcpcnkKOjOLQqzBTJmPB4fng0kj/lfpJhpNWdba+gjh9tGsJW+TdZbxkYwrgRSwbKsMTkCDjArVvi2Kc3TdTIYANYqfY6UU97lcmtMrgJxcAqMZRk/CGRpu4EXFPdEcIOi3weWKHwvlECKFR0l3eZS0A8UK9hM4Vdxm7Zb+he7inT8SRGXsaC5isA78aifBqaz0lYb+udHFU5FDx04Q9dpnY3j3aSGtSjUbIFkGIAsbUenbVbJFTnZnkAegq+K+mKyCBPimi2Q35aaUMS0bY8NAW8N7SmXIpzBC45cdEZ5tPBdeWOzWWdmktfkZL7D2lPn8sEl4lALQzmLJid31sB0ls93LAkZ0+tEiu8eSc9lOBfWyGLYJrH+N9ME0pKDcTK2DpoC9YivGbMpaO0rh1yi7oKLthqiDURW5D7Z7UnHEr4y9OXKyqx/UYhJ3tLT2iX7I8AAAw6fhXCSW+4AAAAASUVORK5CYII=" alt="Thành viên">
+                  </span>
+                  <p>
+                    <strong>131095</strong> 
+                    Thành viên
+                  </p>
+                </li>
+                <li>
+                  <span class="sl-fti3">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpBQjhFM0M1NkRFMTdFODExOTQ2RUNDNEE0ODM5ODA2QyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozQkJFRkY0NDFCN0ExMUU4OUJGMkQxMDBFNDM1MjU2NSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQkJFRkY0MzFCN0ExMUU4OUJGMkQxMDBFNDM1MjU2NSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjM2MzFCN0ZFNDQxOUU4MTE4QUU3RTUwQkRFOTU3MUNEIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkFCOEUzQzU2REUxN0U4MTE5NDZFQ0M0QTQ4Mzk4MDZDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+VtpMzgAAAMdJREFUeNpiLCwsZKAh4ABiKTSxN0D8CcZhYaAtOAzEJmhiH4BYDog/gzhMNHaAKhYxASAWhHFo7QCCYNQBow4gNxsyAzEfmhgob/+lVwhcBuJ3aBgkxkgvB2jiEOMbTYSjDhh1ACUO4ATiq0D8Hw2vppcDRIFYC4sa19E0MOqAUQeMOoDWTTJQ92kbECvjUMMLxHeJNO8CEP9D04urx3QHiL1hDjACYn48oaREpAMUiFQnB7WPnQXaVwNpFKJz6IPakR8BAgwAgxsd8X8ZJEsAAAAASUVORK5CYII=" alt="Đang bán">
+                  </span>
+                  <p>
+                    <strong>26677</strong> 
+                    Đang bán
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row" style="display: flex; justify-content: center; margin-top: 15px;">
+            <a href="https://policy.accfifa.com/privacy-policy.html">Privacy &amp; Policy</a>
+          </div>
+        </div>
+      </div>
+  
+  
+    </body>
+</html>

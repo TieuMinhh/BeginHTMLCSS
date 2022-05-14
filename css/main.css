@@ -1,0 +1,613 @@
+html {
+  margin: -8px;
+  font-family: "Merriweather";
+  background: linear-gradient(0, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0)),
+    url(https://truongquochoc.com/wp-content/uploads/2020/10/25-hinh-nen-iphone-6-va-6s-hd-dep-nhat-the-gioi-1.jpg);
+  /*tạo background cho nguyen trang web kết hợp ảnh và chuyển cảnh với độ trong suốt*/
+  background-size: cover; /* làm cho hình backgound to lên toàn màn hình nhưng có che khuất 1 phần ảnh */
+  background-size: contain; /* làm cho hình backgound to lên toàn màn hình nhưng nhưng không che khuất 1 phần ảnh */
+  background-repeat: no-repeat; /* hình background ko lặp lại*/
+
+  background: url(https://i.ytimg.com/vi/RovleibldJ4/maxresdefault.jpg)
+    no-repeat center / cover;
+
+  /*background-position: top right bottom left center;
+  background-position: 20px center;                              VỊ TRÍ BACKGROUND 
+  background-position: 20px;                                            
+  background-position:  top 20px right 25px bottom 25px left 30px;  */
+
+  /* background: rgb(118, 240, 4); */
+  /* hàm rgb(a,b,c) : tạo màu nền các thông số a b c thay đổi sẽ tạo nên các màu khác nhau */
+
+  /* background: rgba(118, 240, 4, 0.7); */
+  /* hàm rgba(a,b,c,m) : giống hàm rgba nhưng có thêm tham số m chỉ độ mờ của nền*/
+}
+
+.sl-header {
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+  background: #000000 url(https://accfifa.com/26a8f133a96a1e4cef298d8b6ab5a42f.jpg) repeat center / cover;
+  width: 100%;
+  height: 14%;
+  position: fixed;
+  top: 0px;
+  line-height: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sl-icmenu {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    color: #ffffff;
+    font-size: 18px;
+    display: none;
+}
+
+.sl-menu li ~ li:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 6px;
+    height: 6px;
+    background: #b1ff00;
+    transform: rotate(45deg);
+}   
+
+.sl-logo {
+    display: inline-block;
+    position: absolute;
+    top: -45px;
+    left: 100px;
+}
+
+.sl-logo img {
+  margin-left: -40px;
+}
+
+.sl-menu {
+    margin-right: 500px;
+    float: right;
+}
+
+.sl-menu>li {
+    float: left;
+}
+
+.sl-menu li a{
+text-decoration: none;
+}
+
+.sl-menu>li>a {
+    font-size: 14px;
+    color: #b1ff00;
+}
+
+.sl-menu>li>a {
+    display: inline-block;
+    height: 45px;
+    line-height: 58px;
+    text-align: center;
+    padding: 0px 25px;
+    font-weight: 800;
+    border-radius: 16px;
+}
+
+.sl-logreg {
+    position: absolute;
+    top: 3px;
+    right: 203px;
+    width: 189px;
+    height: 39px;
+    text-align: center;
+    background: url(https://accfifa.com/651b95cc648a698acb298f836083fde9.png) no-repeat center;
+    list-style: none;
+}
+
+.sl-logreg>li>a {
+    color:#000000;
+    text-decoration: none;
+    margin-left: -32px;
+}
+
+.sl-logreg>li>a {
+  line-height: 40px;
+  font-family: "Merriweather";
+  font-weight: 750;
+  font-size: 15px;
+}
+
+
+h1:hover {
+  color: green;
+}
+
+h1 {
+  color: yellow; /*Chọn tất cả các thẻ h1 */
+  font-size: 60px;
+  background-color: red;
+  font-weight: 800; /*tạo độ mờ cho chứ */
+  font-style: bold; /* đổi kiểu chữ in đậm , semi-bold : đậm vừa */
+  font-family: Arial; /* đổi kiểu chữ */
+  text-align: center; /* căn giữa */
+  text-transform: uppercase; /* viết hoa tất cả các chữ cái */
+  text-transform: capitalize; /* viết hoa các chữ cái đầu tiên */
+  text-decoration: underline; /* gạch chân các chữ cái */
+}
+
+p {
+  font-size: 20px;
+  color: black;
+  margin-top: 7px;
+}
+.chuccony {
+  color: red;
+  font-size: 40px; /*Chọn tất cả các thẻ p */
+  background-color: green;
+  text-align: center;
+}
+
+/*ID và CLASS
+   1.Dùng # để chỉ định id
+   2.Dùng . để chỉ định class
+
+   <ul>
+        <li id="First">Học để làm gì ?</li> 
+        <!--id: Để phân biệt vs các thuộc tính khác, khi thay đổi sẽ chỉ thay đổi 1 thuộc tính có id chỉ định-->
+        
+        <li class="Second">Công dụng của thuốc ngủ</li>
+        <li class="Second">Tác hại của mai thúy</li>
+        <li class="Second">Tại sao con người có 2 chân ?</li>
+        <!--Class: Để gộp chung các đối tượng cần thay đổi giống nhau-->
+      </ul>
+  */
+
+/* SELECT SELECTOR */
+
+#First {
+  color: red; /*Chọn thẻ có id = First*/
+  font-size: 20px;
+}
+.Second {
+  color: green; /*Chọn tất cả các thẻ có class = Second*/
+  font-size: 30px;
+}
+
+h1 {
+  color: var(--text-color); /*Chọn cả thẻ h1 và p*/
+  /* dùng biến --text-color đã khởi tạo ở dòng 119 */
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+/* VD :
+<a href="Google.com" Target = "Bruno" >Google</a>
+<a href="Google.com" Target = "Conan" >Google 2</a> */
+
+a[target="Bruno"] {
+  color: green; /*Chọn thẻ a có attribute target*/
+  font-size: 25px;
+}
+a[target="Conan"] {
+  color: gray;
+  font-size: 25px;
+  font-size: var(--text-font-size);
+  /* dùng biến --text-font-size đã tạo ở dòng 120 */
+}
+input[type] {
+  border: 1px solid red; /*Biến các viền ngoài input có type = text thành red*/
+}
+input[id="Nut"] {
+  border: 1px solid green; /*Biến các viền ngoài input có type = text thành xanh*/
+}
+#Min {
+  /* Chọn các thuộc tính có id = Min */
+  color: red;
+  text-align: center;
+}
+.Minh {
+  /* Chọn các thuộc tính có class = Minh */
+  color: green;
+}
+table[target="blanc"] {
+  /* Chọn các table có target = Blanc */
+  color: blue;
+}
+table[target="Stam"] {
+  /* Chọn các table có target = Stam */
+  color: green;
+}
+/* ĐỘ ƯU TIÊN TRONG CSS :
+ 1.Internal , External?
+ 2.Inline - 1000
+ 3. #id - 100
+ 4. .class - 10
+ 5.tag - 1
+ 6.Equal specificity?
+ 7.Universal selector and inherited? - 0
+
+ Độ ưu tiên : Thèn nào có số điểm lớn hơn thì ưu tiên thực hiện trước : tag => class => id => inline
+6.Thèn nào có tổng các phương thức lớn hơn thì làm trước
+7.Universal : Cả thuộc tính trang HTML
+  Inherited : ?
+  Nếu có " !important " thì là ưu tiên nhất
+VD :
+ <h1 id="Heading"; class="Hooding" > Hello everyone! <h1/>*/
+
+/* <!--<h1 style = "color : green"> Hello everyone</h1>  Độ ưu tiên 1000 => Mạnh nhất nên thực hiện trước--> */
+
+h1 {
+  color: green; /* 1 điểm*/
+}
+.Heading {
+  /* 10 điểm*/
+  color: red;
+}
+#Hooding {
+  /* 100 điểm*/
+  color: blue;
+}
+#Heading.Hooding {
+  /* 100+10 = 110 điểm  => thực hiện trước */
+  color: yellow;
+}
+/* h1 {
+  color: red !important;
+} */
+
+/*ĐẶT BIẾN TRONG CSS :
+VD : */
+
+:root {
+  --text-color: yellow; /* Biến toàn cục : Xài cho cả trang HTML */
+  --text-font-size: "20px";
+}
+h2 {
+  --my-color: red; /*Biến cục bộ : Chi xài được trong h1*/
+  color: var(--my-color);
+}
+h3 {
+  color: var(--text-color);
+}
+h4 {
+  color: var(--text-color);
+}
+
+/* ĐƠN VỊ TRONG CSS 
+Đơn vị trong CSS : px, rem , em , vw , vh ,...
+        px : pixel : Kích thước ko thay đổi
+        % : Phụ thuộc vào thẻ chứa nó ( đang chứa trong body nên thuộc body
+        mà body thuộc HTML nên % phụ thuộc vào HTML => HTML thay đổi => % thay đổi theo)
+        rem : phụ thuộc thẻ HTML
+        em : Phụ thuộc thẻ gần nhất chưa thuộc tính đó
+        vw : viewport-width  : Độ rộng chiều ngang trình duyệt
+        vh : viewport-height : Độ rộng chiều dọc trình duyệt
+        
+VD : <div style="color: red;font-size: 40px;">ĐƠN VỊ TRONG CSS </div>
+     <div class ="box"></div>
+     <div id="box"></div>
+*/
+
+.box {
+  width: 150px; /*ngang =100 px*/ /* kích thước cố định*/
+  height: 150px; /*dọc =100 px*/
+  background-color: green; /* màu nền*/
+  /*width: 50vw; chiều ngang = 50% chiều ngang của màn hình trình duyệt
+  height: 70vh; chiều dọc = 70% chiều dọc màn hình trình duyệt*/
+}
+#box {
+  /* width: 50%; ngang =100 px */
+  /* Chiều ngang bằng 50% của thẻ HTML
+   Thay đổi theo chiều ngang của thẻ HTML*/
+  height: 100px; /*dọc =100 px*/
+  background-color: red; /* màu nền*/
+
+  padding: 20px 10px 15px 25px; /* THUỘC TÍNH ĐỆM*/
+
+  /*border: 10px solid violet; */
+  /*border-top-width: 10px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;             THUỘC TÍNH VIỀN
+  border-left-width: 0px;
+  => chỉ set border cho phía trên nhưng phải đưa các thuộc tính còn lại về 0 vì solid mặc định là 2 px  */
+  /* border-style: solid; */
+  /* border-top: 10px; => chỉ set cho phía trên */
+  border: 10px solid blue;
+
+  margin: 10px 15px 20px 25px; /* THUỘC TÍNH MARGIN*/
+
+  box-sizing: border-box; /*  THUỘC TÍNH GIỮ NGUYÊN KÍCH THƯỚC NHƯ ĐÃ KHAI BÁO*/
+}
+
+html {
+  font-size: 100%;
+  font-size: 20px;
+}
+h1 {
+  font-size: 2rem; /* biến kích thước thẻ h1 thành gấp đôi html = 20*2=40px; */
+}
+
+#box {
+  width: calc(250px + 50px);
+}
+
+/* LỚP GIẢ TRONG CSS :
+ 1. :hover : sẽ thành thuộc tính đó khi rê chuột vào
+ 2. :active : sẽ thành thuộc tính đó khi kích chuột vào
+ 3. first-child : select phần tử con đầu tiên của 1 tập hợp
+ 4. last-child : select phần tử con cuối cùng của 1 tập hợp
+*/
+
+h3:hover {
+  color: red;
+}
+h3:active {
+  color: violet;
+}
+ol > li:first-child {
+  color: yellow;
+}
+ul > li:last-child {
+  color: black;
+}
+.minnn {
+  color: green;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* THUỘC TÍNH VỊ TRÍ :
+1.Relative : Vị trí tương đối
+2.Absolute : Vị trí tuyệt đối
+  Một thẻ có absolute sẽ phụ thuộc vào thẻ cha có positions bất kì thuộc tính nào.
+3.Fixed : Vị trí phụ thuộc vào khung trình duyệt và có vị trí cố định
+4.Sticky : */
+
+.box {
+  position: relative;
+  top: 130px;
+  left: 100px;
+}
+/* h1 {
+  position: relative;
+  top: 100px;
+} */
+
+.box1 {
+  width: 100%;
+  height: 120px;
+  background-color: green;
+
+  position: relative;
+}
+.box-child {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+
+  position: absolute;
+  top: 30px;
+  right: 220px;
+}
+/* .box-child {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  right: 10px;
+  left: 10px;
+
+  => Dùng để che phủ lớp cha
+} */
+.fixed {
+  width: 100%;
+  height: 40px;
+  background-color: red;
+
+  position: fixed;
+  bottom: 0;
+
+  text-align: center; /* Căn giữa cho các đối tượng con trong class fixed*/
+  line-height: 40px;
+}
+.fixed2 {
+  width: 100%;
+  height: 40px;
+  background-color: red;
+
+  position: fixed;
+  top: 0;
+
+  text-align: center; /* Căn giữa cho các đối tượng con trong class fixed2*/
+  line-height: 40px;
+}
+
+.mincoNY {
+  color: yellow;
+  font-size: 20px;
+
+  text-align: center; /* Căn giữa cho class mincoNY*/
+  line-height: 40px;
+}
+.minsapcoNY {
+  color: yellow;
+  font-size: 20px;
+
+  text-align: center; /* Căn giữa cho class minsapcoNY*/
+  line-height: 40px;
+}
+h5 {
+  font-size: 20px;
+}
+
+/* CÁC CÁCH CĂN GIỮA */
+
+.box3 {
+  background-color: red;
+  height: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* căn đều cả các đối tượng! */
+  justify-content: space-between; /* căn đều cả các đối tượng và đưa các đối tượng ra ngoài sát rìa khung */
+}
+/* .box3 {
+  position: relative;
+}
+h5 {
+  background-color: red;
+  height: 100px;
+  margin-bottom: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%,-50%);
+} */
+
+.Supersentai {
+  padding: 10px;
+  position: relative;
+  top: 10px;
+  left: -9px;
+}
+
+
+
+.sl-footer {
+    padding: 20px 0 40px;
+}
+
+.container2 {
+    position: relative;
+    width: 970px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-6 {
+    width: 50%;
+    float: left;
+}
+
+.col-md-6,.col-sm-12,.col-xs-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.sa-fthotline {
+    width: 100%;
+    max-width: 470px;
+    padding: 10px 13px;
+    border: 2px solid #1f1f1f;
+    background: #141414;
+    border-radius: 5px;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.sa-ftarow {
+    margin: 0 -3px;
+}
+
+.sa-fthnum {
+    position: relative;
+    width: 56%;
+    border-right: 1px solid #2d2d2d;
+}
+
+.sa-ftacol {
+    float: left;
+    padding: 0 3px;
+}
+
+.sa-fthnum a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff502e;
+}
+
+.sa-fthnum p {
+    padding-left: 50px;
+}
+
+.sa-fthwork {
+    text-align: center;
+    width: 44%;
+}
+
+.sa-ftacol {
+    float: left;
+    padding: 0 3px;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.sa-ftarow {
+    margin: 0 -3px;
+}
+
+.sl-ftviews {
+    margin: 0 -5px;
+}
+
+.sl-ftviews >ul {
+    list-style: none;
+}
+
+.sl-ftviews li {
+    float: left;
+    width: 33.333%;
+    padding: 0 5px;
+}
+
+.sl-ftviews li span {
+    display: inline-block;
+    float: left;
+    width: 62px;
+    height: 62px;
+    line-height: 62px;
+    text-align: center;
+    border: 1px solid #717171;
+    background: #000000;
+    border-radius: 100%;
+}
+
+.sl-ftviews img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.sl-ftviews li p {
+    margin-left: 70px;
+    font-size: 16px;
+    color: #717171;
+}
+
+.sl-ftviews li p strong {
+    font-size: 20px;
+    color: #b1ff00;
+    display: block;
+    padding-top: 5px;
+    font-weight: bold;
+}

@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "..\\W3_Web_TheBand"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Front-End"
+  }
+}
